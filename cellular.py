@@ -14,6 +14,9 @@ import pygame
 from pip._vendor.urllib3.connectionpool import xrange
 import random
 from PIL import Image
+
+if not os.path.exists('res'):
+    os.makedirs('res')
 size_of_nucleon = 2
 def generate_colors():
     for i in range(2, 5000):
